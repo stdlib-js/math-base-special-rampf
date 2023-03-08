@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@stdlib/math-base-assert-is-nanf": "^0.0.8",
-    "@stdlib/math-base-napi-unary": "^0.0.8",
+    "@stdlib/math-base-napi-unary": "^0.0.9",
     "@stdlib/utils-library-manifest": "^0.0.8"
   },
   "devDependencies": {
