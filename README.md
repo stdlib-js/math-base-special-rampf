@@ -30,10 +30,14 @@ The [ramp function][ramp-function] is defined as
 
 <!-- <equation class="equation" label="eq:ramp_function" align="center" raw="R(x) = \begin{cases} x & \textrm{if}\ x \geq 0 \\ 0 & \textrm{if}\ x \lt 0\end{cases}" alt="Ramp function."> -->
 
-<div class="equation" align="center" data-raw-text="R(x) = \begin{cases} x &amp; \textrm{if}\ x \geq 0 \\ 0 &amp; \textrm{if}\ x \lt 0\end{cases}" data-equation="eq:ramp_function">
+```math
+R(x) = \begin{cases} x & \textrm{if}\ x \geq 0 \\ 0 & \textrm{if}\ x \lt 0\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="R(x) = \begin{cases} x &amp; \textrm{if}\ x \geq 0 \\ 0 &amp; \textrm{if}\ x \lt 0\end{cases}" data-equation="eq:ramp_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3aca1e2faee6c79270455562ed28fda2e5e31c4c/lib/node_modules/@stdlib/math/base/special/rampf/docs/img/equation_ramp_function.svg" alt="Ramp function.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,10 +45,14 @@ or, alternatively, in terms of the `max` function
 
 <!-- <equation class="equation" label="eq:ramp_function_alternative_defn" align="center" raw="R(x) = \operatorname{max}( x, 0 )" alt="Ramp function alternative definition."> -->
 
-<div class="equation" align="center" data-raw-text="R(x) = \operatorname{max}( x, 0 )" data-equation="eq:ramp_function_alternative_defn">
+```math
+R(x) = \operatorname{max}( x, 0 )
+```
+
+<!-- <div class="equation" align="center" data-raw-text="R(x) = \operatorname{max}( x, 0 )" data-equation="eq:ramp_function_alternative_defn">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@3aca1e2faee6c79270455562ed28fda2e5e31c4c/lib/node_modules/@stdlib/math/base/special/rampf/docs/img/equation_ramp_function_alternative_defn.svg" alt="Ramp function alternative definition.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -52,38 +60,30 @@ or, alternatively, in terms of the `max` function
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-rampf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-rampf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var rampf = require( 'path/to/vendor/umd/math-base-special-rampf/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.rampf;
-})();
-</script>
+var rampf = require( '@stdlib/math-base-special-rampf' );
 ```
 
 #### rampf( x )
@@ -111,14 +111,9 @@ v = rampf( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
+var rampf = require( '@stdlib/math-base-special-rampf' );
 
 var x = linspace( -10.0, 10.0, 101 );
 
@@ -126,11 +121,6 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'R(%d) = %d', x[ i ], rampf( x[ i ] ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -139,7 +129,88 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/rampf.h"
+```
+
+#### stdlib_base_rampf( x )
+
+Evaluates the ramp function (single-precision).
+
+```c
+float y = stdlib_base_rampf( 3.0f );
+// returns 3.0f
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+
+```c
+float stdlib_base_rampf( const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/rampf.h"
+#include <stdio.h>
+
+int main() {
+    float x[] = { 3.14f, -3.14f, 0.0f, 0.0f/0.0f };
+
+    float y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_rampf( x[ i ] );
+        printf( "R(%f) = %f\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -208,7 +279,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -228,7 +299,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/ramp]: https://github.com/stdlib-js/math-base-special-ramp/tree/umd
+[@stdlib/math/base/special/ramp]: https://github.com/stdlib-js/math-base-special-ramp
 
 <!-- </related-links> -->
 
