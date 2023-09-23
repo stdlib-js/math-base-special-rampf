@@ -78,6 +78,11 @@ R(x) = \mathop{\mathrm{max}}( x, 0 )
 ## Usage
 
 ```javascript
+import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-rampf/tags). For example,
+
+```javascript
 import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@v0.1.0-esm/index.mjs';
 ```
 
@@ -113,7 +118,7 @@ v = rampf( NaN );
 <script type="module">
 
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@v0.1.0-esm/index.mjs';
+import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@esm/index.mjs';
 
 var x = linspace( -10.0, 10.0, 101 );
 
