@@ -78,7 +78,7 @@ R(x) = \mathop{\mathrm{max}}( x, 0 )
 ## Usage
 
 ```javascript
-import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@deno/mod.js';
+import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@v0.2.1-deno/mod.js';
 ```
 
 #### rampf( x )
@@ -108,7 +108,7 @@ v = rampf( NaN );
 
 ```javascript
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
-import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@deno/mod.js';
+import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@v0.2.1-deno/mod.js';
 
 var x = linspace( -10.0, 10.0, 101 );
 
