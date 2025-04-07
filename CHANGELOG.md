@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-30)
+## Unreleased (2025-04-07)
 
 <section class="reverts">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
 -   [`8d343e1`](https://github.com/stdlib-js/stdlib/commit/8d343e192c75b0c60451e996351ccf276b49f2c4) - **bench:** update random value generation [(#6398)](https://github.com/stdlib-js/stdlib/pull/6398) _(by Harsh)_
 -   [`57efa3d`](https://github.com/stdlib-js/stdlib/commit/57efa3d9de9c4c2f0a94387079e356dad7649a40) - **chore:** rename C files to follow current project conventions [(#6410)](https://github.com/stdlib-js/stdlib/pull/6410) _(by Karan Anand, stdlib-bot)_
 -   [`ba0c854`](https://github.com/stdlib-js/stdlib/commit/ba0c854e87d0e86d0f7739e26095ec0a0f40c36f) - **docs:** fix function names in C example code _(by Philipp Burckhardt)_
