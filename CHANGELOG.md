@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-11)
+## Unreleased (2025-11-05)
 
 <section class="reverts">
 
@@ -22,10 +22,11 @@
 
 <details>
 
+-   [`dc99273`](https://github.com/stdlib-js/stdlib/commit/dc992737df7bc161d50cf52a9c8226ff20be10a1) - **chore:** add structured package data for `math/base/specia/rampf` [(#8376)](https://github.com/stdlib-js/stdlib/pull/8376) _(by Sachin Pangal, Athan Reines)_
 -   [`0240ed9`](https://github.com/stdlib-js/stdlib/commit/0240ed95c31c83898c7605781a2b73e508b8ef71) - **chore:** minor clean-up _(by Philipp Burckhardt)_
--   [`df1110f`](https://github.com/stdlib-js/stdlib/commit/df1110fd63db25a7adf9f78416bf0377742622e4) - **docs:** replace manual `for` loop in examples [(#6640)](https://github.com/stdlib-js/stdlib/pull/6640) _(by Harsh)_
+-   [`df1110f`](https://github.com/stdlib-js/stdlib/commit/df1110fd63db25a7adf9f78416bf0377742622e4) - **docs:** replace manual `for` loop in examples [(#6640)](https://github.com/stdlib-js/stdlib/pull/6640) _(by Harsh Yadav)_
 -   [`630ddb7`](https://github.com/stdlib-js/stdlib/commit/630ddb777824b5f6e501fda6dadf4ce41dccb964) - **test:** replace equal with strictEqual _(by Karan Anand)_
--   [`8d343e1`](https://github.com/stdlib-js/stdlib/commit/8d343e192c75b0c60451e996351ccf276b49f2c4) - **bench:** update random value generation [(#6398)](https://github.com/stdlib-js/stdlib/pull/6398) _(by Harsh)_
+-   [`8d343e1`](https://github.com/stdlib-js/stdlib/commit/8d343e192c75b0c60451e996351ccf276b49f2c4) - **bench:** update random value generation [(#6398)](https://github.com/stdlib-js/stdlib/pull/6398) _(by Harsh Yadav)_
 -   [`57efa3d`](https://github.com/stdlib-js/stdlib/commit/57efa3d9de9c4c2f0a94387079e356dad7649a40) - **chore:** rename C files to follow current project conventions [(#6410)](https://github.com/stdlib-js/stdlib/pull/6410) _(by Karan Anand, stdlib-bot)_
 -   [`ba0c854`](https://github.com/stdlib-js/stdlib/commit/ba0c854e87d0e86d0f7739e26095ec0a0f40c36f) - **docs:** fix function names in C example code _(by Philipp Burckhardt)_
 -   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
@@ -45,12 +46,13 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
--   Harsh
+-   Harsh Yadav
 -   Karan Anand
 -   Philipp Burckhardt
+-   Sachin Pangal
 
 </section>
 
