@@ -78,6 +78,11 @@ R(x) = \mathop{\mathrm{max}}( x, 0 )
 ## Usage
 
 ```javascript
+import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-rampf/tags). For example,
+
+```javascript
 import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@v0.2.3-esm/index.mjs';
 ```
 
@@ -114,7 +119,7 @@ v = rampf( NaN );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@v0.2.3-esm/index.mjs';
+import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@esm/index.mjs';
 
 var opts = {
     'dtype': 'float32'
