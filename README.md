@@ -78,7 +78,7 @@ R(x) = \mathop{\mathrm{max}}( x, 0 )
 ## Usage
 
 ```javascript
-import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@deno/mod.js';
+import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@v0.2.3-deno/mod.js';
 ```
 
 #### rampf( x )
@@ -109,7 +109,7 @@ v = rampf( NaN );
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@deno/mod.js';
+import rampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-rampf@v0.2.3-deno/mod.js';
 
 var opts = {
     'dtype': 'float32'
